@@ -1,0 +1,814 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7D2111DD2661925700A2FE17 /* Pipipipopopo WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 7D2111DC2661925700A2FE17 /* Pipipipopopo WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7D2111E22661925900A2FE17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D2111E12661925900A2FE17 /* Assets.xcassets */; };
+		7D2111E92661925A00A2FE17 /* Pipipipopopo WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7D2111E82661925A00A2FE17 /* Pipipipopopo WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7D2111EE2661925A00A2FE17 /* PipipipopopoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2111ED2661925A00A2FE17 /* PipipipopopoApp.swift */; };
+		7D2111F02661925A00A2FE17 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2111EF2661925A00A2FE17 /* ContentView.swift */; };
+		7D2111F22661925A00A2FE17 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2111F12661925A00A2FE17 /* NotificationController.swift */; };
+		7D2111F42661925A00A2FE17 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2111F32661925A00A2FE17 /* NotificationView.swift */; };
+		7D2111F62661925A00A2FE17 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2111F52661925A00A2FE17 /* ComplicationController.swift */; };
+		7D2111F82661925A00A2FE17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D2111F72661925A00A2FE17 /* Assets.xcassets */; };
+		7D2111FB2661925A00A2FE17 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D2111FA2661925A00A2FE17 /* Preview Assets.xcassets */; };
+		7D2112072661925A00A2FE17 /* PipipipopopoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2112062661925A00A2FE17 /* PipipipopopoTests.swift */; };
+		7D2112122661925B00A2FE17 /* PipipipopopoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2112112661925B00A2FE17 /* PipipipopopoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7D2111DE2661925700A2FE17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7D2111D22661925700A2FE17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D2111DB2661925700A2FE17;
+			remoteInfo = "Pipipipopopo WatchKit App";
+		};
+		7D2111EA2661925A00A2FE17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7D2111D22661925700A2FE17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D2111E72661925A00A2FE17;
+			remoteInfo = "Pipipipopopo WatchKit Extension";
+		};
+		7D2112032661925A00A2FE17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7D2111D22661925700A2FE17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D2111E72661925A00A2FE17;
+			remoteInfo = "Pipipipopopo WatchKit Extension";
+		};
+		7D21120E2661925B00A2FE17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7D2111D22661925700A2FE17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D2111DB2661925700A2FE17;
+			remoteInfo = "Pipipipopopo WatchKit App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7D2112192661925B00A2FE17 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7D2111E92661925A00A2FE17 /* Pipipipopopo WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D21121D2661925B00A2FE17 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				7D2111DD2661925700A2FE17 /* Pipipipopopo WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7D2111D82661925700A2FE17 /* Pipipipopopo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pipipipopopo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D2111DC2661925700A2FE17 /* Pipipipopopo WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pipipipopopo WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D2111E12661925900A2FE17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7D2111E32661925900A2FE17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D2111E82661925A00A2FE17 /* Pipipipopopo WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Pipipipopopo WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D2111ED2661925A00A2FE17 /* PipipipopopoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PipipipopopoApp.swift; sourceTree = "<group>"; };
+		7D2111EF2661925A00A2FE17 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7D2111F12661925A00A2FE17 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		7D2111F32661925A00A2FE17 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		7D2111F52661925A00A2FE17 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		7D2111F72661925A00A2FE17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7D2111FA2661925A00A2FE17 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7D2111FC2661925A00A2FE17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D2111FD2661925A00A2FE17 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		7D2112022661925A00A2FE17 /* PipipipopopoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PipipipopopoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D2112062661925A00A2FE17 /* PipipipopopoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PipipipopopoTests.swift; sourceTree = "<group>"; };
+		7D2112082661925B00A2FE17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D21120D2661925B00A2FE17 /* PipipipopopoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PipipipopopoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D2112112661925B00A2FE17 /* PipipipopopoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PipipipopopoUITests.swift; sourceTree = "<group>"; };
+		7D2112132661925B00A2FE17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7D2111E52661925A00A2FE17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D2111FF2661925A00A2FE17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D21120A2661925B00A2FE17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7D2111D12661925700A2FE17 = {
+			isa = PBXGroup;
+			children = (
+				7D2111E02661925700A2FE17 /* Pipipipopopo WatchKit App */,
+				7D2111EC2661925A00A2FE17 /* Pipipipopopo WatchKit Extension */,
+				7D2112052661925A00A2FE17 /* PipipipopopoTests */,
+				7D2112102661925B00A2FE17 /* PipipipopopoUITests */,
+				7D2111D92661925700A2FE17 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7D2111D92661925700A2FE17 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7D2111D82661925700A2FE17 /* Pipipipopopo.app */,
+				7D2111DC2661925700A2FE17 /* Pipipipopopo WatchKit App.app */,
+				7D2111E82661925A00A2FE17 /* Pipipipopopo WatchKit Extension.appex */,
+				7D2112022661925A00A2FE17 /* PipipipopopoTests.xctest */,
+				7D21120D2661925B00A2FE17 /* PipipipopopoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7D2111E02661925700A2FE17 /* Pipipipopopo WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				7D2111E12661925900A2FE17 /* Assets.xcassets */,
+				7D2111E32661925900A2FE17 /* Info.plist */,
+			);
+			path = "Pipipipopopo WatchKit App";
+			sourceTree = "<group>";
+		};
+		7D2111EC2661925A00A2FE17 /* Pipipipopopo WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7D2111ED2661925A00A2FE17 /* PipipipopopoApp.swift */,
+				7D2111EF2661925A00A2FE17 /* ContentView.swift */,
+				7D2111F12661925A00A2FE17 /* NotificationController.swift */,
+				7D2111F32661925A00A2FE17 /* NotificationView.swift */,
+				7D2111F52661925A00A2FE17 /* ComplicationController.swift */,
+				7D2111F72661925A00A2FE17 /* Assets.xcassets */,
+				7D2111FC2661925A00A2FE17 /* Info.plist */,
+				7D2111FD2661925A00A2FE17 /* PushNotificationPayload.apns */,
+				7D2111F92661925A00A2FE17 /* Preview Content */,
+			);
+			path = "Pipipipopopo WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		7D2111F92661925A00A2FE17 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7D2111FA2661925A00A2FE17 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7D2112052661925A00A2FE17 /* PipipipopopoTests */ = {
+			isa = PBXGroup;
+			children = (
+				7D2112062661925A00A2FE17 /* PipipipopopoTests.swift */,
+				7D2112082661925B00A2FE17 /* Info.plist */,
+			);
+			path = PipipipopopoTests;
+			sourceTree = "<group>";
+		};
+		7D2112102661925B00A2FE17 /* PipipipopopoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7D2112112661925B00A2FE17 /* PipipipopopoUITests.swift */,
+				7D2112132661925B00A2FE17 /* Info.plist */,
+			);
+			path = PipipipopopoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7D2111D72661925700A2FE17 /* Pipipipopopo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D21121E2661925B00A2FE17 /* Build configuration list for PBXNativeTarget "Pipipipopopo" */;
+			buildPhases = (
+				7D2111D62661925700A2FE17 /* Resources */,
+				7D21121D2661925B00A2FE17 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7D2111DF2661925700A2FE17 /* PBXTargetDependency */,
+			);
+			name = Pipipipopopo;
+			productName = Pipipipopopo;
+			productReference = 7D2111D82661925700A2FE17 /* Pipipipopopo.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		7D2111DB2661925700A2FE17 /* Pipipipopopo WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D21121A2661925B00A2FE17 /* Build configuration list for PBXNativeTarget "Pipipipopopo WatchKit App" */;
+			buildPhases = (
+				7D2111DA2661925700A2FE17 /* Resources */,
+				7D2112192661925B00A2FE17 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7D2111EB2661925A00A2FE17 /* PBXTargetDependency */,
+			);
+			name = "Pipipipopopo WatchKit App";
+			productName = "Pipipipopopo WatchKit App";
+			productReference = 7D2111DC2661925700A2FE17 /* Pipipipopopo WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		7D2111E72661925A00A2FE17 /* Pipipipopopo WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D2112162661925B00A2FE17 /* Build configuration list for PBXNativeTarget "Pipipipopopo WatchKit Extension" */;
+			buildPhases = (
+				7D2111E42661925A00A2FE17 /* Sources */,
+				7D2111E52661925A00A2FE17 /* Frameworks */,
+				7D2111E62661925A00A2FE17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pipipipopopo WatchKit Extension";
+			productName = "Pipipipopopo WatchKit Extension";
+			productReference = 7D2111E82661925A00A2FE17 /* Pipipipopopo WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		7D2112012661925A00A2FE17 /* PipipipopopoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D2112212661925B00A2FE17 /* Build configuration list for PBXNativeTarget "PipipipopopoTests" */;
+			buildPhases = (
+				7D2111FE2661925A00A2FE17 /* Sources */,
+				7D2111FF2661925A00A2FE17 /* Frameworks */,
+				7D2112002661925A00A2FE17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7D2112042661925A00A2FE17 /* PBXTargetDependency */,
+			);
+			name = PipipipopopoTests;
+			productName = PipipipopopoTests;
+			productReference = 7D2112022661925A00A2FE17 /* PipipipopopoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7D21120C2661925B00A2FE17 /* PipipipopopoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D2112242661925B00A2FE17 /* Build configuration list for PBXNativeTarget "PipipipopopoUITests" */;
+			buildPhases = (
+				7D2112092661925B00A2FE17 /* Sources */,
+				7D21120A2661925B00A2FE17 /* Frameworks */,
+				7D21120B2661925B00A2FE17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7D21120F2661925B00A2FE17 /* PBXTargetDependency */,
+			);
+			name = PipipipopopoUITests;
+			productName = PipipipopopoUITests;
+			productReference = 7D21120D2661925B00A2FE17 /* PipipipopopoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7D2111D22661925700A2FE17 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					7D2111D72661925700A2FE17 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					7D2111DB2661925700A2FE17 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					7D2111E72661925A00A2FE17 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					7D2112012661925A00A2FE17 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 7D2111E72661925A00A2FE17;
+					};
+					7D21120C2661925B00A2FE17 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 7D2111DB2661925700A2FE17;
+					};
+				};
+			};
+			buildConfigurationList = 7D2111D52661925700A2FE17 /* Build configuration list for PBXProject "Pipipipopopo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7D2111D12661925700A2FE17;
+			productRefGroup = 7D2111D92661925700A2FE17 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7D2111D72661925700A2FE17 /* Pipipipopopo */,
+				7D2111DB2661925700A2FE17 /* Pipipipopopo WatchKit App */,
+				7D2111E72661925A00A2FE17 /* Pipipipopopo WatchKit Extension */,
+				7D2112012661925A00A2FE17 /* PipipipopopoTests */,
+				7D21120C2661925B00A2FE17 /* PipipipopopoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7D2111D62661925700A2FE17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D2111DA2661925700A2FE17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D2111E22661925900A2FE17 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D2111E62661925A00A2FE17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D2111FB2661925A00A2FE17 /* Preview Assets.xcassets in Resources */,
+				7D2111F82661925A00A2FE17 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D2112002661925A00A2FE17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D21120B2661925B00A2FE17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7D2111E42661925A00A2FE17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D2111F22661925A00A2FE17 /* NotificationController.swift in Sources */,
+				7D2111F02661925A00A2FE17 /* ContentView.swift in Sources */,
+				7D2111F62661925A00A2FE17 /* ComplicationController.swift in Sources */,
+				7D2111EE2661925A00A2FE17 /* PipipipopopoApp.swift in Sources */,
+				7D2111F42661925A00A2FE17 /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D2111FE2661925A00A2FE17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D2112072661925A00A2FE17 /* PipipipopopoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D2112092661925B00A2FE17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D2112122661925B00A2FE17 /* PipipipopopoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7D2111DF2661925700A2FE17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7D2111DB2661925700A2FE17 /* Pipipipopopo WatchKit App */;
+			targetProxy = 7D2111DE2661925700A2FE17 /* PBXContainerItemProxy */;
+		};
+		7D2111EB2661925A00A2FE17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7D2111E72661925A00A2FE17 /* Pipipipopopo WatchKit Extension */;
+			targetProxy = 7D2111EA2661925A00A2FE17 /* PBXContainerItemProxy */;
+		};
+		7D2112042661925A00A2FE17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7D2111E72661925A00A2FE17 /* Pipipipopopo WatchKit Extension */;
+			targetProxy = 7D2112032661925A00A2FE17 /* PBXContainerItemProxy */;
+		};
+		7D21120F2661925B00A2FE17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7D2111DB2661925700A2FE17 /* Pipipipopopo WatchKit App */;
+			targetProxy = 7D21120E2661925B00A2FE17 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7D2112142661925B00A2FE17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7D2112152661925B00A2FE17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7D2112172661925B00A2FE17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Pipipipopopo WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = QH8HG84VQM;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Pipipipopopo WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cin.academy.Pipipipopopo.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		7D2112182661925B00A2FE17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Pipipipopopo WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = QH8HG84VQM;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Pipipipopopo WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cin.academy.Pipipipopopo.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		7D21121B2661925B00A2FE17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QH8HG84VQM;
+				IBSC_MODULE = Pipipipopopo_WatchKit_Extension;
+				INFOPLIST_FILE = "Pipipipopopo WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cin.academy.Pipipipopopo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		7D21121C2661925B00A2FE17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QH8HG84VQM;
+				IBSC_MODULE = Pipipipopopo_WatchKit_Extension;
+				INFOPLIST_FILE = "Pipipipopopo WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cin.academy.Pipipipopopo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		7D21121F2661925B00A2FE17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QH8HG84VQM;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cin.academy.Pipipipopopo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		7D2112202661925B00A2FE17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QH8HG84VQM;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cin.academy.Pipipipopopo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		7D2112222661925B00A2FE17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QH8HG84VQM;
+				INFOPLIST_FILE = PipipipopopoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cin.academy.PipipipopopoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pipipipopopo WatchKit Extension.appex/Pipipipopopo WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		7D2112232661925B00A2FE17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QH8HG84VQM;
+				INFOPLIST_FILE = PipipipopopoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cin.academy.PipipipopopoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pipipipopopo WatchKit Extension.appex/Pipipipopopo WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		7D2112252661925B00A2FE17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QH8HG84VQM;
+				INFOPLIST_FILE = PipipipopopoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cin.academy.PipipipopopoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Pipipipopopo WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		7D2112262661925B00A2FE17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QH8HG84VQM;
+				INFOPLIST_FILE = PipipipopopoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cin.academy.PipipipopopoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Pipipipopopo WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7D2111D52661925700A2FE17 /* Build configuration list for PBXProject "Pipipipopopo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D2112142661925B00A2FE17 /* Debug */,
+				7D2112152661925B00A2FE17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D2112162661925B00A2FE17 /* Build configuration list for PBXNativeTarget "Pipipipopopo WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D2112172661925B00A2FE17 /* Debug */,
+				7D2112182661925B00A2FE17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D21121A2661925B00A2FE17 /* Build configuration list for PBXNativeTarget "Pipipipopopo WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D21121B2661925B00A2FE17 /* Debug */,
+				7D21121C2661925B00A2FE17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D21121E2661925B00A2FE17 /* Build configuration list for PBXNativeTarget "Pipipipopopo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D21121F2661925B00A2FE17 /* Debug */,
+				7D2112202661925B00A2FE17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D2112212661925B00A2FE17 /* Build configuration list for PBXNativeTarget "PipipipopopoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D2112222661925B00A2FE17 /* Debug */,
+				7D2112232661925B00A2FE17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D2112242661925B00A2FE17 /* Build configuration list for PBXNativeTarget "PipipipopopoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D2112252661925B00A2FE17 /* Debug */,
+				7D2112262661925B00A2FE17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7D2111D22661925700A2FE17 /* Project object */;
+}
