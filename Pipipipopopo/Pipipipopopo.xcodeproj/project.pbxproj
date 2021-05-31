@@ -19,6 +19,7 @@
 		7D2111FB2661925A00A2FE17 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D2111FA2661925A00A2FE17 /* Preview Assets.xcassets */; };
 		7D2112072661925A00A2FE17 /* PipipipopopoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2112062661925A00A2FE17 /* PipipipopopoTests.swift */; };
 		7D2112122661925B00A2FE17 /* PipipipopopoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2112112661925B00A2FE17 /* PipipipopopoUITests.swift */; };
+		D7172333266564BA0037DED2 /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7172332266564BA0037DED2 /* WorkoutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,7 @@
 		7D21120D2661925B00A2FE17 /* PipipipopopoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PipipipopopoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D2112112661925B00A2FE17 /* PipipipopopoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PipipipopopoUITests.swift; sourceTree = "<group>"; };
 		7D2112132661925B00A2FE17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7172332266564BA0037DED2 /* WorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 			children = (
 				7D2111ED2661925A00A2FE17 /* PipipipopopoApp.swift */,
 				7D2111EF2661925A00A2FE17 /* ContentView.swift */,
+				D7172332266564BA0037DED2 /* WorkoutView.swift */,
 				7D2111F12661925A00A2FE17 /* NotificationController.swift */,
 				7D2111F32661925A00A2FE17 /* NotificationView.swift */,
 				7D2111F52661925A00A2FE17 /* ComplicationController.swift */,
@@ -389,6 +392,7 @@
 				7D2111F02661925A00A2FE17 /* ContentView.swift in Sources */,
 				7D2111F62661925A00A2FE17 /* ComplicationController.swift in Sources */,
 				7D2111EE2661925A00A2FE17 /* PipipipopopoApp.swift in Sources */,
+				D7172333266564BA0037DED2 /* WorkoutView.swift in Sources */,
 				7D2111F42661925A00A2FE17 /* NotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
