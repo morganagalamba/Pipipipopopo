@@ -11,14 +11,24 @@ import WatchKit
 struct WorkoutView: View {
     
     @State var timerVal = 20
-    @State var minutes: Int = 1
+    @State var minutes: Int = 0
     @State var seconds: Int = 10
+    @State var zeroMinutes: String = ""
+    @State var zeroSeconds: String = ""
     
     var body: some View {
         VStack{
-            Text("\(minutes):\(seconds)")
+            Text("\(zeroMinutes)\(minutes):\(zeroSeconds)\(seconds)")
                 .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                 .onAppear(){
+                    if self.minutes < 10 {
+                        self.zeroMinutes = "0"
+                    } else {
+                        self.zeroMinutes = ""
+                    }
+                    if self.seconds < 10 {
+                        self.zeroSeconds = "0"
+                    }
                     Timer.scheduledTimer(withTimeInterval: 1, repeats: true){ _ in
                         if self.minutes > 0 {
                             if self.seconds > 0 {
@@ -26,12 +36,20 @@ struct WorkoutView: View {
                             } else {
                                 self.seconds = 59
                                 self.minutes -= 1
-                                
+                                self.zeroSeconds = ""
                             }
                         } else if self.minutes == 0 {
                             if self.seconds > 0 {
                                 self.seconds -= 1
                             }
+                        }
+                        if self.minutes < 10 {
+                            self.zeroMinutes = "0"
+                        } else {
+                            self.zeroMinutes = ""
+                        }
+                        if self.seconds < 10 {
+                            self.zeroSeconds = "0"
                         }
                         
                     }
