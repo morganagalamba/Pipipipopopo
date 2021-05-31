@@ -52,6 +52,9 @@ struct WorkoutView: View {
                             self.zeroSeconds = "0"
                         }
                         
+                        if self.seconds == 0 && self.minutes == 0 {
+                            WKInterfaceDevice.current().play(.stop)
+                        }
                     }
                 }
             Image("Chart")
