@@ -12,6 +12,7 @@ struct PipipipopopoApp: App {
     @SceneBuilder var body: some Scene {
         WindowGroup {
             NavigationView {
+                //WorkoutView()
                 ContentView()
             }
         }
