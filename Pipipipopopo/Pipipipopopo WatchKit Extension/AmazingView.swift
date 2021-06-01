@@ -13,16 +13,19 @@ struct AmazingView: View {
     var body: some View {
         VStack{
            Text("AMAZING!")
-            Text("Você completou o treino")
+            Text("treino completo")
+                .fontWeight(.light)
                 .font(.system(size: 14))
             Image("Amazing")
                 .padding()
-            Button("menu") {
+            Spacer()
+            Button("Menu") {
                 print("Button tapped!")
             }
             .frame(width: 160.0, height: 36.0)
             .foregroundColor(.black)
-            .background(Color(" ButtonColor"))
+//            .background(Color(" ButtonColor"))
+            .background(Color.white)
             .cornerRadius(10)
             
             
