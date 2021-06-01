@@ -13,7 +13,7 @@ struct PipipipopopoApp: App {
         WindowGroup {
             NavigationView {
                 //WorkoutView()
-                ContentView()
+                PageControlView()
             }
         }
 

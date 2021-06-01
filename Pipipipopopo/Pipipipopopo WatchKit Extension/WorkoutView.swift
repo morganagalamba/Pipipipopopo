@@ -63,7 +63,7 @@ struct WorkoutView: View {
             HStack{
                 Text("Prancha")
                 Spacer()
-            }
+            } .padding(.bottom,20)
         }
         .padding()
     }

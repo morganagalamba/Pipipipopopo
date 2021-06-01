@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		669A5B6E2666A2E800BB8ADE /* AmazingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669A5B6D2666A2E800BB8ADE /* AmazingView.swift */; };
+		669A5B702666B39500BB8ADE /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669A5B6F2666B39500BB8ADE /* PageControl.swift */; };
+		669A5B722666B6E700BB8ADE /* PauseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669A5B712666B6E700BB8ADE /* PauseView.swift */; };
 		7D2111DD2661925700A2FE17 /* Pipipipopopo WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 7D2111DC2661925700A2FE17 /* Pipipipopopo WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		7D2111E22661925900A2FE17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D2111E12661925900A2FE17 /* Assets.xcassets */; };
 		7D2111E92661925A00A2FE17 /* Pipipipopopo WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7D2111E82661925A00A2FE17 /* Pipipipopopo WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -82,6 +85,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		669A5B6D2666A2E800BB8ADE /* AmazingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmazingView.swift; sourceTree = "<group>"; };
+		669A5B6F2666B39500BB8ADE /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
+		669A5B712666B6E700BB8ADE /* PauseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseView.swift; sourceTree = "<group>"; };
 		7D2111D82661925700A2FE17 /* Pipipipopopo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pipipipopopo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D2111DC2661925700A2FE17 /* Pipipipopopo WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pipipipopopo WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D2111E12661925900A2FE17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -177,6 +183,9 @@
 				7D2111F12661925A00A2FE17 /* NotificationController.swift */,
 				7D2111F32661925A00A2FE17 /* NotificationView.swift */,
 				7D2111F52661925A00A2FE17 /* ComplicationController.swift */,
+				669A5B6D2666A2E800BB8ADE /* AmazingView.swift */,
+				669A5B6F2666B39500BB8ADE /* PageControl.swift */,
+				669A5B712666B6E700BB8ADE /* PauseView.swift */,
 				7D2111F72661925A00A2FE17 /* Assets.xcassets */,
 				7D2111FC2661925A00A2FE17 /* Info.plist */,
 				7D2111FD2661925A00A2FE17 /* PushNotificationPayload.apns */,
@@ -398,6 +407,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D2111F22661925A00A2FE17 /* NotificationController.swift in Sources */,
+				669A5B6E2666A2E800BB8ADE /* AmazingView.swift in Sources */,
+				669A5B702666B39500BB8ADE /* PageControl.swift in Sources */,
+				669A5B722666B6E700BB8ADE /* PauseView.swift in Sources */,
 				7D9609792666AADC00B7AAD5 /* WorkoutType.swift in Sources */,
 				7D2111F02661925A00A2FE17 /* ContentView.swift in Sources */,
 				7D96097526656B5F00B7AAD5 /* HomeScreen.swift in Sources */,
