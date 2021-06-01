@@ -19,9 +19,12 @@ struct AmazingView: View {
                 .padding()
             Button("menu") {
                 print("Button tapped!")
-            }.foregroundColor(.black)
+            }
+            .frame(width: 160.0, height: 36.0)
+            .foregroundColor(.black)
             .background(Color(" ButtonColor"))
             .cornerRadius(10)
+            
             
             
         }
