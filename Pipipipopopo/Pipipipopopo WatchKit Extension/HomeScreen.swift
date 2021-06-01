@@ -10,71 +10,27 @@ import SwiftUI
 struct HomeScreen: View {
     
     var body: some View {
-        let dotSize: CGFloat = 13
-        NavigationView{
+        NavigationView {
             ScrollView {
                 VStack {
-                    Button(action: {
-                        print("entrou no botao")
-                        NavigationLink(destination: WorkoutDetails()) {
-                            Text("treino aeróbico")
-                        }
-                        print("entrou no botao")
-
-                    }) {
-                        HStack {
-                            Circle()
-                                .fill(Color.blue)
-                                .frame(width: dotSize, height: dotSize, alignment: .leading)
-                            Text("Aeróbico")
-                            Spacer()
-                        }
+                    NavigationLink(destination: WorkoutDetails()) {
+                        WorkoutType(workoutName: "Aeróbico")
                     }
                     
-                    Button(action: {
-                        //
-                    }) {
-                        HStack {
-                            Circle()
-                                .fill(Color.green)
-                                .frame(width: dotSize, height: dotSize, alignment: .leading)
-                            
-                            Text("HIIT")
-                            Spacer()
-                        }
+                    NavigationLink(destination: WorkoutDetails()) {
+                        WorkoutType(workoutName: "HIIT")
                     }
                     
-                    Button(action: {
-                        //
-                    }) {
-                        HStack {
-                            Circle()
-                                .fill(Color.pink)
-                                .frame(width: dotSize, height: dotSize, alignment: .leading)
-                            
-                            Text("Pernas")
-                            Spacer()
-                        }
+                    NavigationLink(destination: WorkoutDetails()) {
+                        WorkoutType(workoutName: "Abdômen")
                     }
                     
-                    Button(action: {
-                        //
-                    }) {
-                        HStack {
-                            Circle()
-                                .fill(Color.yellow)
-                                .frame(width: dotSize, height: dotSize, alignment: .leading)
-                            
-                            Text("Abdômen")
-                            Spacer()
-                        }
+                    NavigationLink(destination: WorkoutDetails()) {
+                        WorkoutType(workoutName: "Pernas")
                     }
-                    
                 }
-                
             }
-        }
-        
+        }.navigationTitle("Treinos")
     }
 }
 
