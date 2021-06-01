@@ -68,7 +68,7 @@ struct PageControlView: View {
                 Circle()
                     .frame(width: 8, height: 8)
                     .foregroundColor(currentPage==1 ? Color.white:Color.gray)
-            }
+            } .padding(.top, 180)
         }
     }
 }
