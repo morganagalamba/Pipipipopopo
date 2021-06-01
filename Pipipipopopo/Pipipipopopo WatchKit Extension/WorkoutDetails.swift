@@ -60,7 +60,7 @@ struct WorkoutDetails: View {
                 }
                 VStack {
                     Spacer()
-                    NavigationLink(destination: WorkoutView()) {
+                    NavigationLink(destination: PageControlView()) {
                         Text("Começar")
                             .foregroundColor(.black)
                     }

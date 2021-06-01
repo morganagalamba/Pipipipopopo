@@ -19,9 +19,13 @@ struct AmazingView: View {
             Image("Amazing")
                 .padding()
             Spacer()
-            Button("Menu") {
-                print("Button tapped!")
+            
+            NavigationLink(destination: ContentView()) {
+                Text("Menu")
             }
+//            Button("Menu") {
+//                print("Button tapped!")
+//            }
             .frame(width: 160.0, height: 36.0)
             .foregroundColor(.black)
 //            .background(Color(" ButtonColor"))
