@@ -26,7 +26,7 @@ struct AmazingView: View {
 //            Button("Menu") {
 //                print("Button tapped!")
 //            }
-            .frame(width: 160.0, height: 36.0)
+//            .frame(width: 160.0, height: 36.0)
             .foregroundColor(.black)
 //            .background(Color(" ButtonColor"))
             .background(Color.white)
