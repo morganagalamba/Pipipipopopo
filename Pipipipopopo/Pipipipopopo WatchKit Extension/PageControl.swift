@@ -8,20 +8,21 @@
 import SwiftUI
 import WatchKit
 
+
 struct PagerManager<Content: View>: View {
     let pageCount: Int
     @Binding var currentIndex: Int
     let content: Content
-    
+
     //Set the initial values for the variables
     init(pageCount: Int, currentIndex: Binding<Int>, @ViewBuilder content: () -> Content) {
         self.pageCount = pageCount
         self._currentIndex = currentIndex
         self.content = content()
     }
-    
+
     @GestureState private var translation: CGFloat = 0
-    
+
     //Set the animation
     var body: some View {
         GeometryReader { geometry in
@@ -31,8 +32,7 @@ struct PagerManager<Content: View>: View {
             .frame(width: geometry.size.width, alignment: .leading)
             .offset(x: -CGFloat(self.currentIndex) * geometry.size.width)
             .offset(x: self.translation)
-            
-            
+            .animation(.linear)
             .gesture(
                 DragGesture().updating(self.$translation) { value, state, _ in
                     state = value.translation.width
@@ -47,31 +47,32 @@ struct PagerManager<Content: View>: View {
 }
 
 struct PageControlView: View {
-    @State private var currentPage = 0
+        @State private var currentPage = 0
     
-    var body: some View {
-        
-        //Pager Manager
-        VStack{
-            PagerManager(pageCount: 2, currentIndex: $currentPage) {
-                WorkoutView()
-                PauseView()
+        var body: some View {
+    
+            //Pager Manager
+            VStack{
+                PagerManager(pageCount: 2, currentIndex: $currentPage) {
+                    WorkoutView()
+                    PauseView()
+//                    Text("dois")
+                }
+    
+                Spacer()
+    
+                //Page Control
+                HStack{
+                    Circle()
+                        .frame(width: 8, height: 8)
+                        .foregroundColor(currentPage==1 ? Color.gray:Color.white)
+                    Circle()
+                        .frame(width: 8, height: 8)
+                        .foregroundColor(currentPage==1 ? Color.white:Color.gray)
+                } .padding(.top, 180)
             }
-            
-            Spacer()
-            
-            //Page Control
-            HStack{
-                Circle()
-                    .frame(width: 8, height: 8)
-                    .foregroundColor(currentPage==1 ? Color.gray:Color.white)
-                Circle()
-                    .frame(width: 8, height: 8)
-                    .foregroundColor(currentPage==1 ? Color.white:Color.gray)
-            } .padding(.top, 180)
         }
     }
-}
 
 struct PagerView_Previews: PreviewProvider {
     static var previews: some View {
