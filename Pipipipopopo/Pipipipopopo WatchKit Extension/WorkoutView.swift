@@ -24,9 +24,7 @@ struct WorkoutView: View {
     
     var body: some View {
         VStack{
-            
             if exercises > 0 {
-                
                 if isTiming {
                     Text("\(zeroMinutes)\(minutes):\(zeroSeconds)\(seconds)")
                         .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
@@ -74,14 +72,12 @@ struct WorkoutView: View {
                         }
                 }
                 else { // exercicio de contagem
-                    Text("\(exerciseCount)")
-                        .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                        .onAppear(){
-                            print("entrou")
+                    //Text("\(exerciseCount)")
+                        //.font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                        //.onAppear(){
+                          //  print("entrou")
                             
-                        }
-                    //print("entrou")
-                    
+                        //}
                 }
             }
             Image("Chart")
