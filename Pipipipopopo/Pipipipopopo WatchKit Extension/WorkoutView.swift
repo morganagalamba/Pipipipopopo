@@ -63,21 +63,22 @@ struct WorkoutView: View {
                                 }
                                 
                                 if self.seconds == 0 && self.minutes == 0 {
-                                    
-                                    
                                     WKInterfaceDevice.current().play(.stop)
                                     exercises -= 1
                                     isTiming.toggle()
+                                    self.timer?.invalidate()
+                                    self.timer = nil
+                                    
                                 }
                             }
                         }
                 }
                 else { // exercicio de contagem
                     Text("\(exerciseCount)")
+                        .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                         .onAppear(){
                             print("entrou")
-                            self.timer?.invalidate()
-                            self.timer = nil
+                            
                         }
                     //print("entrou")
                     
