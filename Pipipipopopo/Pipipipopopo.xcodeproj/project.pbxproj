@@ -25,6 +25,7 @@
 		7D96097526656B5F00B7AAD5 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96097426656B5F00B7AAD5 /* HomeScreen.swift */; };
 		7D96097726657A4F00B7AAD5 /* WorkoutDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96097626657A4F00B7AAD5 /* WorkoutDetails.swift */; };
 		7D9609792666AADC00B7AAD5 /* WorkoutType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9609782666AADC00B7AAD5 /* WorkoutType.swift */; };
+		7D9AFA9B2667F7A0005ED7EA /* SpinningAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9AFA9A2667F7A0005ED7EA /* SpinningAnimation.swift */; };
 		D7172333266564BA0037DED2 /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7172332266564BA0037DED2 /* WorkoutView.swift */; };
 /* End PBXBuildFile section */
 
@@ -111,6 +112,7 @@
 		7D96097426656B5F00B7AAD5 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		7D96097626657A4F00B7AAD5 /* WorkoutDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetails.swift; sourceTree = "<group>"; };
 		7D9609782666AADC00B7AAD5 /* WorkoutType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutType.swift; sourceTree = "<group>"; };
+		7D9AFA9A2667F7A0005ED7EA /* SpinningAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinningAnimation.swift; sourceTree = "<group>"; };
 		D7172332266564BA0037DED2 /* WorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -178,6 +180,7 @@
 				7D2111EF2661925A00A2FE17 /* ContentView.swift */,
 				7D96097426656B5F00B7AAD5 /* HomeScreen.swift */,
 				7D96097626657A4F00B7AAD5 /* WorkoutDetails.swift */,
+				7D9AFA9A2667F7A0005ED7EA /* SpinningAnimation.swift */,
 				7D9609782666AADC00B7AAD5 /* WorkoutType.swift */,
 				D7172332266564BA0037DED2 /* WorkoutView.swift */,
 				7D2111F12661925A00A2FE17 /* NotificationController.swift */,
@@ -406,6 +409,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D9AFA9B2667F7A0005ED7EA /* SpinningAnimation.swift in Sources */,
 				7D2111F22661925A00A2FE17 /* NotificationController.swift in Sources */,
 				669A5B6E2666A2E800BB8ADE /* AmazingView.swift in Sources */,
 				669A5B702666B39500BB8ADE /* PageControl.swift in Sources */,
