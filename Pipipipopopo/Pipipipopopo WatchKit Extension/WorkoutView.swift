@@ -18,73 +18,103 @@ struct WorkoutView: View {
     @State var series: Int = 2
     @State var isTiming: Bool = true
     @State var exerciseCount: Int = 5
-    @State var exerciseName: String = "Polichinelo"
-    @State var exercises: Int = 2
+    @State var exerciseName: String = ""
     @State var timer: Timer?
+    @State var workout : Workout = Workout(name: "Aeróbico", exercise: [Exercise(name: "Polichinelo", isTiming: true, count: 5, seconds: 10, minutes: 0, series: 1),Exercise(name: "Corrida estacionária", isTiming: true, count: 0, seconds: 30, minutes: 0 , series: 1)] )
+    @State var auxExercises: Int = 0
+    @State var auxSeries: Int = 0
+
     
     var body: some View {
         VStack{
-            if exercises > 0 {
-                if isTiming {
+            if auxExercises < workout.exercises.count {
+                if workout.exercises[auxExercises].isTiming {
+
                     Text("\(zeroMinutes)\(minutes):\(zeroSeconds)\(seconds)")
                         .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                         .onAppear(){
-                            if self.minutes < 10 {
+                            self.seconds = workout.exercises[auxExercises].seconds
+                            self.minutes = workout.exercises[auxExercises].minutes
+                            
+                            if minutes < 10 {
                                 self.zeroMinutes = "0"
                             } else {
                                 self.zeroMinutes = ""
                             }
-                            if self.seconds < 10 {
+                            if seconds < 10 {
                                 self.zeroSeconds = "0"
+                            } else {
+                                self.zeroSeconds = ""
+                                
                             }
-                            self.timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true){ _ in
-                                if self.minutes > 0 {
-                                    if self.seconds > 0 {
-                                        self.seconds -= 1
+                            self.timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true){
+                                _ in
+                                if minutes > 0 {
+                                    if seconds > 0 {
+                                        seconds -= 1
                                     } else {
-                                        self.seconds = 59
-                                        self.minutes -= 1
+                                        seconds = 59
+                                        minutes -= 1
                                         self.zeroSeconds = ""
                                     }
-                                } else if self.minutes == 0 {
-                                    if self.seconds > 0 {
-                                        self.seconds -= 1
+                                } else if minutes == 0 {
+                                    if seconds > 0 {
+                                        seconds -= 1
                                     }
                                 }
-                                if self.minutes < 10 {
+                                if minutes < 10 {
                                     self.zeroMinutes = "0"
                                 } else {
                                     self.zeroMinutes = ""
                                 }
-                                if self.seconds < 10 {
+                                if seconds < 10 {
                                     self.zeroSeconds = "0"
                                 }
                                 
-                                if self.seconds == 0 && self.minutes == 0 {
-                                    WKInterfaceDevice.current().play(.stop)
-                                    exercises -= 1
-                                    isTiming.toggle()
-                                    self.timer?.invalidate()
-                                    self.timer = nil
-                                    
+                                if seconds == 0 && minutes == 0 {
+                                    //WKInterfaceDevice.current().play(.stop)
+                                    self.auxSeries += 1
+                                    if auxSeries == workout.exercises[auxExercises].series {
+                                        self.auxExercises += 1
+                                    }
+                                    //self.timer?.invalidate()
+                                    //self.timer = nil
                                 }
+                                
                             }
                         }
-                }
-                else { // exercicio de contagem
-                    //Text("\(exerciseCount)")
-                        //.font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                        //.onAppear(){
-                          //  print("entrou")
+                    Image("Chart")
+                        .padding()
+                        
+                    
+                } else { // exercicio de contagem
+                    Text("\(exerciseCount)")
+                        .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                        .onAppear(){
+                          print("entrou")
                             
-                        //}
+                        }
+                    
                 }
             }
-            Image("Chart")
-                .padding()
-            
             HStack{
-                Text("Prancha")
+                Text("\(workout.exercises[auxExercises].name)")
+                    .onChange(of: self.workout.exercises[auxExercises].name ) { newExercise in
+                        switch newExercise {
+                            case "Polichinelo" :
+                                self.seconds = workout.exercises[auxExercises].seconds
+                                self.minutes = workout.exercises[auxExercises].minutes
+                            
+                            case "Corrida estacionária" :
+                                self.seconds = workout.exercises[auxExercises].seconds
+                                self.minutes = workout.exercises[auxExercises].minutes
+                            default:
+                                self.seconds = workout.exercises[auxExercises].seconds
+                                self.minutes = workout.exercises[auxExercises].minutes
+                        }
+                        
+                        
+                    }
                 Spacer()
             } .padding(.bottom,20)
         }
