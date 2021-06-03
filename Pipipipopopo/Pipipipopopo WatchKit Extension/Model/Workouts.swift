@@ -12,9 +12,9 @@ public class Workout{
     var name: String
     var exercises : [Exercise]
      
-    init(name: String , exercise: [Exercise] ) {
+    init(name: String , exercises: [Exercise] ) {
         self.name = name
-        self.exercises = exercise
+        self.exercises = exercises
     }
     
 }

@@ -15,27 +15,24 @@ struct WorkoutView: View {
     @State var seconds: Int = 10
     @State var zeroMinutes: String = ""
     @State var zeroSeconds: String = ""
-    @State var series: Int = 2
-    @State var isTiming: Bool = true
-    @State var exerciseCount: Int = 5
-    @State var exerciseName: String = ""
+    //@State var series: Int = 2
+    //@State var isTiming: Bool = true
+    //@State var exerciseCount: Int = 5
     @State var timer: Timer?
-    @State var workout : Workout = Workout(name: "Aeróbico", exercise: [Exercise(name: "Polichinelo", isTiming: true, count: 5, seconds: 10, minutes: 0, series: 1),Exercise(name: "Corrida estacionária", isTiming: true, count: 0, seconds: 30, minutes: 0 , series: 1)] )
-    @State var auxExercises: Int = 0
-    @State var auxSeries: Int = 0
-
+    var exerciseName : String
+    var ExerciseSeconds : Int
+    var ExerciseMinutes : Int
+    //@State var workout : Workout = Workout(name: "Aeróbico", exercises: [Exercise(name: "Polichinelo", isTiming: true, count: 5, seconds: 10, minutes: 0, series: 1),Exercise(name: "Corrida estacionária", isTiming: true, count: 0, seconds: 30, minutes: 0 , series: 1)] )
+    //@State var auxExercises: Int = 0
+    //@State var auxSeries: Int = 0
     
     var body: some View {
         VStack{
-            if auxExercises < workout.exercises.count {
-                if workout.exercises[auxExercises].isTiming {
-
                     Text("\(zeroMinutes)\(minutes):\(zeroSeconds)\(seconds)")
                         .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                         .onAppear(){
-                            self.seconds = workout.exercises[auxExercises].seconds
-                            self.minutes = workout.exercises[auxExercises].minutes
-                            
+                            self.seconds = ExerciseSeconds
+                            self.minutes = ExerciseMinutes
                             if minutes < 10 {
                                 self.zeroMinutes = "0"
                             } else {
@@ -51,15 +48,15 @@ struct WorkoutView: View {
                                 _ in
                                 if minutes > 0 {
                                     if seconds > 0 {
-                                        seconds -= 1
+                                        self.seconds -= 1
                                     } else {
-                                        seconds = 59
+                                        self.seconds = 59
                                         minutes -= 1
                                         self.zeroSeconds = ""
                                     }
                                 } else if minutes == 0 {
                                     if seconds > 0 {
-                                        seconds -= 1
+                                        self.seconds -= 1
                                     }
                                 }
                                 if minutes < 10 {
@@ -72,51 +69,24 @@ struct WorkoutView: View {
                                 }
                                 
                                 if seconds == 0 && minutes == 0 {
-                                    //WKInterfaceDevice.current().play(.stop)
-                                    self.auxSeries += 1
+                                    WKInterfaceDevice.current().play(.stop)
+                                    /*self.auxSeries += 1
                                     if auxSeries == workout.exercises[auxExercises].series {
                                         self.auxExercises += 1
-                                    }
-                                    //self.timer?.invalidate()
-                                    //self.timer = nil
+                                    }*/
+                                    self.timer?.invalidate()
+                                    self.timer = nil
                                 }
                                 
                             }
                         }
                     Image("Chart")
                         .padding()
-                        
-                    
-                } else { // exercicio de contagem
-                    Text("\(exerciseCount)")
-                        .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                        .onAppear(){
-                          print("entrou")
-                            
-                        }
-                    
-                }
-            }
             HStack{
-                Text("\(workout.exercises[auxExercises].name)")
-                    .onChange(of: self.workout.exercises[auxExercises].name ) { newExercise in
-                        switch newExercise {
-                            case "Polichinelo" :
-                                self.seconds = workout.exercises[auxExercises].seconds
-                                self.minutes = workout.exercises[auxExercises].minutes
-                            
-                            case "Corrida estacionária" :
-                                self.seconds = workout.exercises[auxExercises].seconds
-                                self.minutes = workout.exercises[auxExercises].minutes
-                            default:
-                                self.seconds = workout.exercises[auxExercises].seconds
-                                self.minutes = workout.exercises[auxExercises].minutes
-                        }
-                        
-                        
-                    }
+                Text("\(exerciseName)")
                 Spacer()
-            } .padding(.bottom,20)
+            }
+            
         }
         .padding()
     }
@@ -124,6 +94,6 @@ struct WorkoutView: View {
 
 struct WorkoutView_Previews: PreviewProvider {
     static var previews: some View {
-        WorkoutView()
+        WorkoutView(exerciseName: "Polichinelo", ExerciseSeconds: 10, ExerciseMinutes: 0)
     }
 }

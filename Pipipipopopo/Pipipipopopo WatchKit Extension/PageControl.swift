@@ -54,7 +54,7 @@ struct PageControlView: View {
             //Pager Manager
             VStack{
                 PagerManager(pageCount: 2, currentIndex: $currentPage) {
-                    WorkoutView()
+                    WorkoutView(exerciseName: "Polichinelo", ExerciseSeconds : 10 , ExerciseMinutes: 0)
                     PauseView()
 //                    Text("dois")
                 }
