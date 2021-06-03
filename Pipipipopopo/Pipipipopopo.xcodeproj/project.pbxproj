@@ -28,6 +28,7 @@
 		7D9609792666AADC00B7AAD5 /* WorkoutType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9609782666AADC00B7AAD5 /* WorkoutType.swift */; };
 		7D9AFA9B2667F7A0005ED7EA /* SpinningAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9AFA9A2667F7A0005ED7EA /* SpinningAnimation.swift */; };
 		D7172333266564BA0037DED2 /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7172332266564BA0037DED2 /* WorkoutView.swift */; };
+		D72490C926680A0C00005FBC /* Workouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72490C826680A0C00005FBC /* Workouts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +117,7 @@
 		7D9609782666AADC00B7AAD5 /* WorkoutType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutType.swift; sourceTree = "<group>"; };
 		7D9AFA9A2667F7A0005ED7EA /* SpinningAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinningAnimation.swift; sourceTree = "<group>"; };
 		D7172332266564BA0037DED2 /* WorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
+		D72490C826680A0C00005FBC /* Workouts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workouts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 		7D2111EC2661925A00A2FE17 /* Pipipipopopo WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				D72490C7266809F700005FBC /* Model */,
 				7D2111ED2661925A00A2FE17 /* PipipipopopoApp.swift */,
 				7D2111EF2661925A00A2FE17 /* ContentView.swift */,
 				7D96097426656B5F00B7AAD5 /* HomeScreen.swift */,
@@ -224,6 +227,14 @@
 				7D2112132661925B00A2FE17 /* Info.plist */,
 			);
 			path = PipipipopopoUITests;
+			sourceTree = "<group>";
+		};
+		D72490C7266809F700005FBC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D72490C826680A0C00005FBC /* Workouts.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -415,6 +426,7 @@
 				7D9AFA9B2667F7A0005ED7EA /* SpinningAnimation.swift in Sources */,
 				7D2111F22661925A00A2FE17 /* NotificationController.swift in Sources */,
 				669A5B6E2666A2E800BB8ADE /* AmazingView.swift in Sources */,
+				D72490C926680A0C00005FBC /* Workouts.swift in Sources */,
 				669A5B702666B39500BB8ADE /* PageControl.swift in Sources */,
 				669A5B722666B6E700BB8ADE /* PauseView.swift in Sources */,
 				7D1D80E12669498200F8E24C /* BreakView.swift in Sources */,
@@ -591,7 +603,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Pipipipopopo WatchKit Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = QH8HG84VQM;
+				DEVELOPMENT_TEAM = 28CMR6C7AZ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Pipipipopopo WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -615,7 +627,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Pipipipopopo WatchKit Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = QH8HG84VQM;
+				DEVELOPMENT_TEAM = 28CMR6C7AZ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Pipipipopopo WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -640,7 +652,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QH8HG84VQM;
+				DEVELOPMENT_TEAM = 28CMR6C7AZ;
 				IBSC_MODULE = Pipipipopopo_WatchKit_Extension;
 				INFOPLIST_FILE = "Pipipipopopo WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cin.academy.Pipipipopopo.watchkitapp;
@@ -660,7 +672,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QH8HG84VQM;
+				DEVELOPMENT_TEAM = 28CMR6C7AZ;
 				IBSC_MODULE = Pipipipopopo_WatchKit_Extension;
 				INFOPLIST_FILE = "Pipipipopopo WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cin.academy.Pipipipopopo.watchkitapp;
@@ -678,7 +690,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = QH8HG84VQM;
+				DEVELOPMENT_TEAM = 28CMR6C7AZ;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cin.academy.Pipipipopopo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -691,7 +703,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = QH8HG84VQM;
+				DEVELOPMENT_TEAM = 28CMR6C7AZ;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cin.academy.Pipipipopopo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -705,7 +717,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QH8HG84VQM;
+				DEVELOPMENT_TEAM = 28CMR6C7AZ;
 				INFOPLIST_FILE = PipipipopopoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -728,7 +740,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QH8HG84VQM;
+				DEVELOPMENT_TEAM = 28CMR6C7AZ;
 				INFOPLIST_FILE = PipipipopopoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -749,7 +761,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QH8HG84VQM;
+				DEVELOPMENT_TEAM = 28CMR6C7AZ;
 				INFOPLIST_FILE = PipipipopopoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -770,7 +782,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QH8HG84VQM;
+				DEVELOPMENT_TEAM = 28CMR6C7AZ;
 				INFOPLIST_FILE = PipipipopopoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
