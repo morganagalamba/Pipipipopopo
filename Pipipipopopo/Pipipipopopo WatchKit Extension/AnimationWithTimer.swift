@@ -47,13 +47,13 @@ struct ProgressBar: View {
         
         RoundedRectangle (cornerRadius: 20)
             .fill(completed() ? Color(lightGreen) : Color(darkGreen))
-            .frame(width: 7, height: completed() ? CGFloat.random(in: 45..<75) : CGFloat.random(in: 55..<75))
-            .animation(Animation.easeIn(duration: Double.random(in: 0.5..<1.0)))
-//            .animation(
-//                Animation.linear(duration: Double.random(in: 0.9..<1.3))
-//                    .repeatCount(5, autoreverses: true)
-//            )
-            .offset(y: completed() ? CGFloat.random(in: -20..<20) : CGFloat.random(in: -20..<20))
+            .frame(width: 7, height: completed() ? CGFloat.random(in: 45..<65) : CGFloat.random(in: 35..<55))
+//            .animation(Animation.easeIn(duration: Double.random(in: 0.5..<1.0)))
+            .animation(
+                Animation.easeInOut(duration: Double.random(in: 1.0..<1.2))
+                    .repeatCount(10, autoreverses: true)
+            )
+            .offset(y: completed() ? CGFloat.random(in: -10..<20) : CGFloat.random(in: -10..<20))
     }
     
     
@@ -71,7 +71,7 @@ struct ProgressBar: View {
 
 struct AnimationWithTimer: View {
     @State var counter: Int = 0
-    var countTo: Int = 2
+    var countTo: Int = 1
     
     var body: some View {
         HStack(spacing: 20){

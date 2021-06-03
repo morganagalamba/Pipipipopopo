@@ -57,13 +57,13 @@ struct WorkoutView: View {
                         }
                     }
                 }
-            Image("Chart")
+            AnimationWithTimer()
                 .padding()
             
             HStack{
                 Text("Prancha")
                 Spacer()
-            } .padding(.bottom,20)
+            } //.padding(.bottom,20)
         }
         .padding()
     }
