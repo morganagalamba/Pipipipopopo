@@ -13,7 +13,7 @@ struct HomeScreen: View {
         NavigationView {
             ScrollView {
                 VStack {
-                    NavigationLink(destination: PageControlView()) {
+                    NavigationLink(destination: WorkoutDetails()) {
                         WorkoutType(workoutName: "Aeróbico")
                     }
                     

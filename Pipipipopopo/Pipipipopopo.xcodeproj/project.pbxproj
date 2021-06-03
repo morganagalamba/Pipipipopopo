@@ -29,6 +29,7 @@
 		7D9AFA9B2667F7A0005ED7EA /* SpinningAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9AFA9A2667F7A0005ED7EA /* SpinningAnimation.swift */; };
 		D7172333266564BA0037DED2 /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7172332266564BA0037DED2 /* WorkoutView.swift */; };
 		D72490C926680A0C00005FBC /* Workouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72490C826680A0C00005FBC /* Workouts.swift */; };
+		D73A4A2C26695EA600DD5F53 /* WorkoutCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73A4A2B26695EA600DD5F53 /* WorkoutCountView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +119,7 @@
 		7D9AFA9A2667F7A0005ED7EA /* SpinningAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinningAnimation.swift; sourceTree = "<group>"; };
 		D7172332266564BA0037DED2 /* WorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
 		D72490C826680A0C00005FBC /* Workouts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workouts.swift; sourceTree = "<group>"; };
+		D73A4A2B26695EA600DD5F53 /* WorkoutCountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCountView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,10 +187,11 @@
 				7D2111EF2661925A00A2FE17 /* ContentView.swift */,
 				7D96097426656B5F00B7AAD5 /* HomeScreen.swift */,
 				7D96097626657A4F00B7AAD5 /* WorkoutDetails.swift */,
+				D7172332266564BA0037DED2 /* WorkoutView.swift */,
+				D73A4A2B26695EA600DD5F53 /* WorkoutCountView.swift */,
 				7D9AFA9A2667F7A0005ED7EA /* SpinningAnimation.swift */,
 				7D9609782666AADC00B7AAD5 /* WorkoutType.swift */,
 				7D1D80E02669498200F8E24C /* BreakView.swift */,
-				D7172332266564BA0037DED2 /* WorkoutView.swift */,
 				7D2111F12661925A00A2FE17 /* NotificationController.swift */,
 				7D2111F32661925A00A2FE17 /* NotificationView.swift */,
 				7D2111F52661925A00A2FE17 /* ComplicationController.swift */,
@@ -423,6 +426,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D73A4A2C26695EA600DD5F53 /* WorkoutCountView.swift in Sources */,
 				7D9AFA9B2667F7A0005ED7EA /* SpinningAnimation.swift in Sources */,
 				7D2111F22661925A00A2FE17 /* NotificationController.swift in Sources */,
 				669A5B6E2666A2E800BB8ADE /* AmazingView.swift in Sources */,
