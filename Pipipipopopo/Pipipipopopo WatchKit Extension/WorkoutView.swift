@@ -80,7 +80,7 @@ struct WorkoutView: View {
                                 
                             }
                         }
-                    Image("Chart")
+                    AnimationWithTimer()
                         .padding()
             HStack{
                 Text("\(exerciseName)")
